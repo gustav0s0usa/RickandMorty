@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Card_Api" >
+
+    <ImageView
+        android:id="@+id/imgbannercard"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:contentDescription="@string/desc_imgrickemorty"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <EditText
+        android:id="@+id/nm_personagem"
+        android:layout_width="233dp"
+        android:layout_height="48dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="@string/txtnmpersonagem"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbannercard"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="100dp"
+        android:layout_height="56dp"
+        android:background="@drawable/buttonbg"
+        android:onClick="buscaPersonagens"
+        android:text="@string/txtok"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/nm_personagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nm_personagem"
+        app:layout_constraintTop_toTopOf="@+id/nm_personagem"
+        tools:ignore="TextContrastCheck" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="390dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nm_personagem"
+        tools:listitem="@layout/itenlist" />
+</androidx.constraintlayout.widget.ConstraintLayout>

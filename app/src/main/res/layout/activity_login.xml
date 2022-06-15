@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/creepster"
+        android:text="@string/txt_login"
+        android:textAlignment="center"
+        android:textColor="@color/verde1"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Editnmuser"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/verde1"
+        android:ems="10"
+        android:fontFamily="@font/creepster"
+        android:hint="@string/txtnome"
+        android:inputType="textPersonName"
+        android:textColor="@color/verde1"
+        android:textColorHint="@color/verde1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlogin" />
+
+    <EditText
+        android:id="@+id/Editemailuser"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/verde1"
+        android:ems="10"
+        android:fontFamily="@font/creepster"
+        android:hint="@string/txtemail"
+        android:inputType="textPersonName"
+        android:textColor="@color/verde1"
+        android:textColorHint="@color/verde1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Editnmuser" />
+
+    <EditText
+        android:id="@+id/Editsenhauser"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/verde1"
+        android:ems="10"
+        android:fontFamily="@font/creepster"
+        android:hint="@string/txtsenha"
+        android:inputType="textPersonName"
+        android:textColor="@color/verde1"
+        android:textColorHighlight="@color/verde1"
+        android:textColorHint="@color/verde1"
+        android:textColorLink="@color/verde1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Editemailuser" />
+
+    <Button
+        android:id="@+id/btn_continuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonbg"
+        android:text="@string/txtcontinuar"
+        android:textColor="@color/white"
+        android:textColorHint="@color/verde1"
+        app:layout_constraintEnd_toEndOf="@+id/Editsenhauser"
+        app:layout_constraintTop_toBottomOf="@+id/Editsenhauser"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
